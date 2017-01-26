@@ -1,15 +1,8 @@
-$(function() {
+// $(function() {
+// $('.home').click(function() {
+//         $('.logo').animate({
+//         'marginTop' : '-=30px' 
+//         });
+//     });
 
-asdfasdf
-	//this is my message..
-	var message = 'happy day';
-	console.log(message);
-
-
-
-
-});
-
-
-
-	
+// });
