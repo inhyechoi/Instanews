@@ -20,14 +20,13 @@ h1 {
 
 header{
   display: flex;
-  flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
-  align-items: center;
-  height: 645px;
-  padding: 16px;
+  align-content: center;
+  height: 88vh;
+  padding: 6px;
     @include tablet {
-    flex-direction: row;
+
     }
       @include desktop {
       justify-content: flex-start;
@@ -36,8 +35,9 @@ header{
 
 .logo{
   display:block;
+  width: 100%;
     @include tablet {
-    width: 90%;
+    width: 40%;
     margin-left: 10%;
     }
       @include desktop {
@@ -47,6 +47,7 @@ header{
 }
 
 .selection_box{
+  width: 100%;
     @include tablet {
     text-align: left;
     margin-right: 20%;
