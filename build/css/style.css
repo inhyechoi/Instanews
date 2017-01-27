@@ -45,6 +45,28 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+@keyframes nav-up {
+  0% {
+    transform: translateY(0%); }
+  50% {
+    transform: translateY(-220px); }
+  100% {
+    transform: translateY(-220px); } }
+
+@keyframes logo {
+  0% {
+    transform: scale(0); }
+  50% {
+    transform: scale(0); }
+  100% {
+    transform: scale(0.7) translateY(45px); } }
+
+.header-up {
+  animation: nav-up 0s linear 1 alternate forwards; }
+
+.logo-sizings {
+  animation: logo 0s linear 1 alternate forwards; }
+
 @font-face {
   font-family: 'open_sans';
   src: url("../../fonts/opensans-bold-webfont.eot");
@@ -73,10 +95,8 @@ table {
   font-weight: normal;
   font-style: italic; }
 
-html {
-  background-color: #000000; }
-
 body {
+  background-color: #000000;
   font-family: "open_sans", sans-serif;
   font-size: 16px;
   color: #ffffff; }
@@ -84,16 +104,16 @@ body {
 h1 {
   font-family: 'open_sans';
   font-size: 13px;
-  margin-top: 12px; }
+  margin-top: 17px; }
+  @media screen and (min-width: 600px) {
+    h1 {
+      font-size: 14.5px; } }
+  @media screen and (min-width: 1000px) {
+    h1 {
+      font-size: 16px; } }
 
-.selection_choice1 {
+.choose_selection {
   text-transform: capitalize; }
-
-p {
-  color: #c2c2c2;
-  font-family: 'open_sans';
-  text-transform: capitalize;
-  font-size: 14.5px; }
 
 .footer_text2 {
   text-transform: uppercase; }
@@ -109,36 +129,56 @@ header {
       flex-wrap: wrap;
   -ms-flex-align: center;
       align-items: center;
-  height: 85vh;
-  padding: 18px; }
+  height: 645px;
+  padding: 16px; }
   @media screen and (min-width: 600px) {
     header {
       -ms-flex-direction: row;
           flex-direction: row; } }
+  @media screen and (min-width: 1000px) {
+    header {
+      -ms-flex-pack: start;
+          justify-content: flex-start; } }
 
 .logo {
-  max-width: 100%; }
+  display: block; }
   @media screen and (min-width: 600px) {
     .logo {
-      width: 140px;
-      margin-right: 18px; } }
+      width: 90%;
+      margin-left: 10%; } }
+  @media screen and (min-width: 1000px) {
+    .logo {
+      margin-left: 15px; } }
 
 @media screen and (min-width: 600px) {
   .selection_box {
     text-align: left;
-    -ms-flex-preferred-size: 43%;
-        flex-basis: 43%;
-    margin-bottom: 30px; } }
+    margin-right: 20%; } }
+
+@media screen and (min-width: 1000px) {
+  .selection_box {
+    margin-left: 70px; } }
 
 .select_dropdown {
   text-transform: capitalize;
   width: 125px;
-  height: 25px;
+  height: 27px;
   margin-top: 15px;
+  margin-bottom: 10px;
   font-size: 17px; }
 
 body {
   text-align: center; }
 
+p {
+  color: #c2c2c2;
+  font-family: 'open_sans';
+  text-transform: capitalize;
+  font-size: 14.5px; }
+
 footer {
-  height: 15vh; }
+  height: 100px; }
+  @media screen and (min-width: 1000px) {
+    footer {
+      text-align: left;
+      margin-left: 30px; } }

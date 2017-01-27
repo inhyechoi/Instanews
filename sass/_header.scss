@@ -1,19 +1,17 @@
 h1 {
   font-family: 'open_sans';
   font-size: $font-size - 3;
-  margin-top: 12px;
+  margin-top: 17px;
+    @include tablet {
+    font-size: $font-size - 1.5;
+    }
+      @include desktop {
+      font-size: $font-size;
+      }
 }
 
-.selection_choice1 {
+.choose_selection {
   text-transform: capitalize;
-    
-}
-
-p {
-  color: #c2c2c2;
-  font-family: 'open_sans';
-  text-transform: capitalize;
-  font-size: $font-size - 1.5;
 }
 
 .footer_text2 {
@@ -26,38 +24,43 @@ header{
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  height: 85vh;
-  padding: 18px;
-  @include tablet {
+  height: 645px;
+  padding: 16px;
+    @include tablet {
     flex-direction: row;
-  }
+    }
+      @include desktop {
+      justify-content: flex-start;
+      }
 }
 
 .logo{
-  max-width: 100%;
+  display:block;
     @include tablet {
-      width: 140px;
-      margin-right:18px;
-  }
+    width: 90%;
+    margin-left: 10%;
+    }
+      @include desktop {
+      margin-left:15px;
+
+      }
 }
 
 .selection_box{
-   @include tablet {
-      text-align: left;
-      flex-basis: 43%;
-      margin-bottom: 30px;
-     }
+    @include tablet {
+    text-align: left;
+    margin-right: 20%;
+    }
+      @include desktop {
+      margin-left:70px;
+      }
 }
-
 
 .select_dropdown {
-    text-transform: capitalize;
-    width: 125px;
-    height: 25px;
-    margin-top: 15px;
-    font-size: $font-size +1;
+  text-transform: capitalize;
+  width: 125px;
+  height: 27px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: $font-size +1;
 }
-
-
-
-

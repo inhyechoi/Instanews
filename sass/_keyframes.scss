@@ -1,0 +1,32 @@
+@keyframes nav-up {
+  0% {
+ transform: translateY(0%); 
+  }
+  50% {
+ transform: translateY(-220px); 
+  }
+  100% {
+    transform: translateY(-220px); 
+  }
+}
+
+@keyframes logo {
+  0% {
+ transform: scale(0); 
+  }
+  50% {
+ transform: scale(0); 
+  }
+  100% {
+  transform: scale(0.7) translateY(45px); 
+   
+  }
+}
+
+.header-up {
+ animation: nav-up 0s linear 1 alternate forwards;
+}
+
+.logo-sizings {
+ animation: logo 0s linear 1 alternate forwards;
+}

@@ -1,3 +1,15 @@
+
+p {
+  color: #c2c2c2;
+  font-family: 'open_sans';
+  text-transform: capitalize;
+  font-size: $font-size - 1.5;
+}
+
 footer {
-  height: 15vh;
+  height: 100px;
+  @include desktop {
+    text-align: left;
+    margin-left: 30px;
+  }
 }
