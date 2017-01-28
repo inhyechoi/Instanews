@@ -26,7 +26,7 @@ gulp.task('scripts', ['lint'], function() {
 });
 
 gulp.task('lint', function() {
-    return gulp.src(['./js/*.js','!node_modules/**'])
+    return gulp.src(['./js/*.js'])
         .pipe(plumber(plumberErrorHandler))
         .pipe(eslint())
         .pipe(eslint.format())

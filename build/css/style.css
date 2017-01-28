@@ -49,9 +49,9 @@ table {
   0% {
     transform: translateY(0%); }
   50% {
-    transform: translateY(-220px); }
+    transform: translateY(-40px); }
   100% {
-    transform: translateY(-220px); } }
+    transform: translateY(-40px); } }
 
 @keyframes logo {
   0% {
@@ -95,12 +95,6 @@ table {
   font-weight: normal;
   font-style: italic; }
 
-body {
-  background-color: #000000;
-  font-family: "open_sans", sans-serif;
-  font-size: 16px;
-  color: #ffffff; }
-
 h1 {
   font-family: 'open_sans';
   font-size: 13px;
@@ -108,9 +102,6 @@ h1 {
   @media screen and (min-width: 600px) {
     h1 {
       font-size: 14.5px; } }
-  @media screen and (min-width: 1000px) {
-    h1 {
-      font-size: 16px; } }
 
 .choose_selection {
   text-transform: capitalize; }
@@ -121,14 +112,20 @@ h1 {
 header {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  height: 88vh;
+  text-align: center;
+  height: 90vh;
   padding: 6px; }
+  @media screen and (min-width: 600px) {
+    header {
+      padding: 6px;
+      -ms-flex-align: center;
+          align-items: center; } }
   @media screen and (min-width: 1000px) {
     header {
       -ms-flex-pack: start;
@@ -136,24 +133,24 @@ header {
 
 .logo {
   display: block;
-  width: 100%; }
+  max-width: 100%;
+  height: auto; }
   @media screen and (min-width: 600px) {
     .logo {
-      width: 40%;
-      margin-left: 10%; } }
-  @media screen and (min-width: 1000px) {
-    .logo {
-      margin-left: 15px; } }
+      width: 200px;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%; } }
 
 .selection_box {
-  width: 100%; }
+  width: 400px; }
   @media screen and (min-width: 600px) {
     .selection_box {
-      text-align: left;
-      margin-right: 20%; } }
-  @media screen and (min-width: 1000px) {
-    .selection_box {
-      margin-left: 70px; } }
+      max-width: 260px;
+      height: 116px;
+      margin-left: 20px;
+      -ms-flex: 0 1 75%;
+          flex: 0 1 75%;
+      text-align: left; } }
 
 .select_dropdown {
   text-transform: capitalize;
@@ -164,9 +161,46 @@ header {
   font-size: 17px; }
 
 body {
-  text-align: center;
-  height: 90vh;
-  margin-bottom: 50px; }
+  background-color: #000000;
+  font-family: "open_sans", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  height: 90vh; }
+
+@media screen and (min-width: 600px) {
+  .contentList {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
+
+@media screen and (min-width: 400px) {
+  .li-image {
+    height: 419px; } }
+
+.li-article {
+  position: relative; }
+  @media screen and (min-width: 600px) {
+    .li-article {
+      width: 50%; } }
+  @media screen and (min-width: 1000px) {
+    .li-article {
+      width: 25%; } }
+
+#wrapper {
+  width: 100%;
+  text-align: left;
+  padding: 8px 5px;
+  position: absolute;
+  bottom: 0px;
+  background: black;
+  background: rgba(0, 0, 0, 0.65); }
+
+.text {
+  color: white;
+  opacity: 1;
+  font-size: 15px;
+  line-height: 1.5; }
 
 p {
   color: #c2c2c2;
@@ -175,8 +209,8 @@ p {
   font-size: 14.5px; }
 
 footer {
-  height: 10vh; }
+  height: 10vh;
+  text-align: center; }
   @media screen and (min-width: 1000px) {
     footer {
-      text-align: left;
-      margin-left: 30px; } }
+      text-align: left; } }

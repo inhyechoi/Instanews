@@ -1,5 +1,50 @@
-body{
-     text-align: center;
-     height: 90vh;
-     margin-bottom: 50px;
+
+body {
+    background-color: #000000;
+    font-family: $open-sans;
+    font-size: $font-size;
+    color:#ffffff;
+    // text-align: center;
+    height: 90vh;
 }
+
+.contentList{
+     @include tablet{
+        display: flex;
+        flex-wrap: wrap;
+     }
+}
+.li-image {
+        @include mobile {
+            height: 419px;
+        } 
+        @include tablet {
+        } 
+    
+}
+.li-article {
+    position: relative;
+    @include tablet{
+    width: 50%;
+    }
+    @include desktop{
+    width: 25%;
+    }
+    }  
+
+#wrapper{
+    width: 100%;
+    text-align: left;
+    padding: 8px 5px;
+    position: absolute;
+    bottom: 0px;
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, .65); 
+}
+.text {
+    color: white;
+    opacity: 1;
+    font-size: $font-size - 1;
+    line-height: 1.5;
+}
+    

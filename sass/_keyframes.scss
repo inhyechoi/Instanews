@@ -3,10 +3,10 @@
  transform: translateY(0%); 
   }
   50% {
- transform: translateY(-220px); 
+ transform: translateY(-40px); 
   }
   100% {
-    transform: translateY(-220px); 
+    transform: translateY(-40px); 
   }
 }
 
@@ -19,9 +19,11 @@
   }
   100% {
   transform: scale(0.7) translateY(45px); 
-   
   }
 }
+
+
+
 
 .header-up {
  animation: nav-up 0s linear 1 alternate forwards;

@@ -8,8 +8,8 @@ p {
 
 footer {
   height: 10vh;
+  text-align: center;
   @include desktop {
-    text-align: left;
-    margin-left: 30px;
-  }
+       text-align: left;
+      }
 }

@@ -1,37 +1,38 @@
-
 $(function() {
-
   $('.select_dropdown').on('change', function(){
-    console.log('hope');
-      $('.header').toggleClass('header-up');
-      $('.logo').toggleClass('logo-sizings');
-
-
+    $('.header').toggleClass('header-up').css('height', 'auto');
+    $('.logo').toggleClass('logo-sizings');
+ 
   var url = 'https://api.nytimes.com/svc/topstories/v2/home.json';
       url += '?' + $.param({
       'api-key': 'e90ac7969c2046b0a19c7811bc84d6ee'
   });
 
   $.getJSON(url)
-
     .done(function(data) {
-    var aaa = data.results;
-    console.log(aaa);
+      var dataList = data.results.filter(function(result){
+        return result.multimedia.length;
+      }).splice(0,12);
+    
+          var $viewImage = $('.contentList')
+          var listItem = '';
+         
+      $.each(dataList, function(data, value){
 
-//   function abc(value) {
-//   return value.;
-// }
+          var title = value.abstract;
+          var image = value.multimedia[4].url;
 
-// var filtered = aaa.filter(abc);
-// console.log(abc(aaa[0]));
-// filtered is [12, 130, 44]
+          listItem += '<li class="li-article"><div id="wrapper"><p class="text">'
+          listItem += title
+          listItem += '</p></div>'
+          listItem += '<img class="li-image" src="'
+          listItem += image
+          listItem += '"/></li>'
+          console.log(listItem);
+      })
+      $viewImage.append(listItem);
+   
 
-
-//       $.each(data.results, function (index, value) {
-
-// console.log();     
-
-//       })
     })
   })
 });
