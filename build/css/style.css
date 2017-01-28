@@ -119,7 +119,7 @@ header {
   -ms-flex-line-pack: center;
       align-content: center;
   text-align: center;
-  height: 90vh;
+  height: 88vh;
   padding: 6px; }
   @media screen and (min-width: 600px) {
     header {
@@ -174,9 +174,12 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; } }
 
-@media screen and (min-width: 400px) {
-  .li-image {
-    height: 419px; } }
+.li-image {
+  width: 100%; }
+  @media screen and (min-width: 400px) {
+    .li-image {
+      height: 419px;
+      object-fit: cover; } }
 
 .li-article {
   position: relative; }
@@ -188,9 +191,8 @@ body {
       width: 25%; } }
 
 #wrapper {
-  width: 100%;
   text-align: left;
-  padding: 8px 5px;
+  padding: 5px;
   position: absolute;
   bottom: 0px;
   background: black;
@@ -209,7 +211,7 @@ p {
   font-size: 14.5px; }
 
 footer {
-  height: 10vh;
+  height: 12vh;
   text-align: center; }
   @media screen and (min-width: 1000px) {
     footer {

@@ -15,8 +15,10 @@ body {
      }
 }
 .li-image {
+    width: 100%;
         @include mobile {
             height: 419px;
+            object-fit: cover;
         } 
         @include tablet {
         } 
@@ -25,17 +27,16 @@ body {
 .li-article {
     position: relative;
     @include tablet{
-    width: 50%;
+        width: 50%;
     }
     @include desktop{
-    width: 25%;
+        width: 25%;
     }
-    }  
+}  
 
 #wrapper{
-    width: 100%;
     text-align: left;
-    padding: 8px 5px;
+    padding: 5px;
     position: absolute;
     bottom: 0px;
     background: rgb(0, 0, 0); 

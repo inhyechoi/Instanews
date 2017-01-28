@@ -3,7 +3,10 @@ $(function() {
     $('.header').toggleClass('header-up').css('height', 'auto');
     $('.logo').toggleClass('logo-sizings');
  
-  var url = 'https://api.nytimes.com/svc/topstories/v2/home.json';
+  var input = this.value;
+  var $contentList = $('.contentList');
+  $contentList.empty();
+  var url = 'https://api.nytimes.com/svc/topstories/v2/'+input+'.json';
       url += '?' + $.param({
       'api-key': 'e90ac7969c2046b0a19c7811bc84d6ee'
   });
