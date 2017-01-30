@@ -1,8 +1,12 @@
 $(function() {
   $('.select_dropdown').on('change', function(){
-    $('.header').toggleClass('header-up').css('height', 'auto');
-    $('.logo').toggleClass('logo-sizings');
+    $('header').addClass('header-up').css('height', 'auto').removeClass('header');
+    $('.logo').addClass('logo-sizings').removeClass('logo');
  
+    $( '.loader' ).show();
+
+   
+
   var input = this.value;
   var $contentList = $('.contentList');
   $contentList.empty();
@@ -13,6 +17,8 @@ $(function() {
 
   $.getJSON(url)
     .done(function(data) {
+      $( '.loader' ).hide();
+
       var dataList = data.results.filter(function(result){
         return result.multimedia.length;
       }).splice(0,12);
