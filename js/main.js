@@ -2,7 +2,7 @@ $(function() {
   $('.select_dropdown').on('change', function(){
     $('header').addClass('header-up').css('height', 'auto').removeClass('header');
     $('.logo').addClass('logo-sizings').removeClass('logo');
- 
+  
     $( '.loader' ).show();
 
    

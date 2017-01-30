@@ -5,6 +5,9 @@ h1 {
   @include tablet {
     font-size: $font-size - 1.5;
   }
+  @include desktop {
+    font-size: $font-size;
+  }
 }
 
 .choose_selection {
@@ -47,10 +50,15 @@ header{
   max-width: 100%;
   height: auto;
   @include tablet {
-    width: 11rem;
+    width: 60%;
+    margin-left:1rem;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 25%;
             flex: 0 1 25%;
+  }
+  @include desktop {
+    width: 13.8rem;
+    margin-left: 1.5rem;
   }
 }
 
@@ -59,12 +67,17 @@ header{
     @include tablet {
       max-width: 16.25rem;
       height: 7.25rem;
-      margin-left: 1.25rem;
+      margin-left: 1rem;
+      margin-top: 1rem;
       -webkit-box-flex: 0;
           -ms-flex: 0 1 75%;
               flex: 0 1 75%;
       text-align: left;
     }
+    @include desktop {
+      margin-left: 5.5rem;
+      margin-top: 1rem;
+  }
 }
 
 .select_dropdown {
