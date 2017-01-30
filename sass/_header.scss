@@ -19,65 +19,112 @@ h1 {
 }
 
 header{
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
   text-align: center;
   height: 88vh;
   padding: 0.375rem;
   @include tablet {
+    justify-content: center;
+    flex-wrap: nowrap; 
     padding: 0.375rem;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   @include desktop {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
   }
 }
 
-.logo{
-  display:block;
-  max-width: 100%;
+.header_up{
+  flex-wrap: nowrap;
+  flex-direction: column;
   height: auto;
-  @include tablet {
-    width: 60%;
-    margin-left:1rem;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 25%;
-            flex: 0 1 25%;
+  padding: 2rem 0 1.5rem 0;
+  @include tablet{
+    justify-content: center;
+    flex-direction: row;
+    height: 7.81rem;
+    padding: 0.3rem;
+  }
+  @include tablet{
+    justify-content: flex-start;
+  }
+
+}
+
+.logo_div{
+    width: 100%;
+  @include tablet{
+    width: 30%;
+    margin: 0 1% 0 10%;
+  }
+  @include desktop{
+    width: 20%;
+    margin-left: 0;
+  }
+}
+.logo_div_sizing{
+  @include tablet{
+    width: 13%;
+    margin-left: 0;
+  }
+}
+.logo{
+  animation: logo_animate 1.5s forwards;
+  animation-delay: 1s;
+  animation-direction: normal;
+  @include tablet {  
+    animation: logo_animate2 1.5s forwards;
+    animation-delay: 1s;
+    animation-direction: normal; 
+    width: 75%; 
+    margin-left:18%;
   }
   @include desktop {
     width: 13.8rem;
-    margin-left: 1.5rem;
+    margin-left: 12%;
+    animation: none;
+  }
+}
+.logo_left{
+  width: 9.43rem;
+  @include tablet{
+    animation:none;
+    width: 4.06rem;
+    margin: 0;
   }
 }
 
 .selection_box{
-    width: 25rem;
+    animation: selection_box_animate 1.5s forwards;
+    animation-delay: 1s;
+    animation-direction: normal;
     @include tablet {
+      animation: selection_box_animate2 1.5s forwards;
+      animation-delay: 1s;
+      animation-direction: normal;
+      flex-basis:53%;
       max-width: 16.25rem;
       height: 7.25rem;
-      margin-left: 1rem;
       margin-top: 1rem;
-      -webkit-box-flex: 0;
-          -ms-flex: 0 1 75%;
-              flex: 0 1 75%;
+      margin-right: 18%;
       text-align: left;
     }
     @include desktop {
-      margin-left: 5.5rem;
+      margin-left: 4rem;
       margin-top: 1rem;
+      animation: none;
   }
+}
+.selection_box_sizing{
+  margin: 0;
+  height: 6rem;
+  @include desktop {
+      margin-top: -10px;
+  }
+
 }
 
 .select_dropdown {

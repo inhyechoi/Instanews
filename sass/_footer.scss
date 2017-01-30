@@ -2,7 +2,6 @@
 p {
   color: #c2c2c2;
   font-family: 'open_sans';
-  text-transform: capitalize;
   font-size: $font-size - 1.5;
   @include desktop {
     margin-top: 0.3rem;

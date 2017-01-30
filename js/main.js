@@ -1,7 +1,9 @@
 $(function() {
   $('.select_dropdown').on('change', function(){
-    $('header').addClass('header-up').css('height', 'auto').removeClass('header');
-    $('.logo').addClass('logo-sizings').removeClass('logo');
+  $('header').addClass('header_up').removeClass('header');
+  $('.logo').addClass('logo_left').removeClass('.logo');
+  $('.logo_div').addClass('logo_div_sizing').removeClass('.logo_div');
+  $('.selection_box').addClass('selection_box_sizing').removeClass('.selection_box');  
   
     $( '.loader' ).show();
 
