@@ -16,6 +16,8 @@
   border-radius: 4px;
   background: #041328;
   position: relative;
+  width: 170px;
+  margin: 10px auto;
 }
 
 .selectric .label {

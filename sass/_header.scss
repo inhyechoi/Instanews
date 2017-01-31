@@ -98,11 +98,9 @@ header{
 }
 
 .selection_box{
-    animation: selection_box_animate 1.5s forwards;
     animation-delay: 1s;
     animation-direction: normal;
     @include tablet {
-      animation: selection_box_animate2 1.5s forwards;
       animation-delay: 1s;
       animation-direction: normal;
       flex-basis:53%;
@@ -136,3 +134,4 @@ header{
   margin-bottom: 0.62rem;
   font-size: $font-size +1;
 }
+
