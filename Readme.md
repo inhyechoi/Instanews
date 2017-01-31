@@ -19,3 +19,14 @@ organizing web-style and SASS partial files
 * SCSS - @mixins, variables, globals etc.
 * JS libraries, jQuery and Slectric plugin(selection box)
 
+# What have I learned
+
+Installing packages using npm (stands for node package manager)
+
+Calling contents(images/texts/urls) of data from web api
+
+Setting the Gulp and running the task such as
+* lint
+* sass
+* browser-sync
+
