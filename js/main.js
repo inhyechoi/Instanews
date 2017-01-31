@@ -9,27 +9,24 @@ $('.select_dropdown').selectric();
     
       $( '.loader' ).show();
       
-    var input = this.value;
-    var $contentList = $('.contentList');
-        $contentList.empty();
-    var url = 'https://api.nytimes.com/svc/topstories/v2/'+input+'.json';
-        url += '?' + $.param({
-        'api-key': 'e90ac7969c2046b0a19c7811bc84d6ee'
-    });
+      var input = this.value;
+      var $contentList = $('.contentList');
+          $contentList.empty();
+      var url = 'https://api.nytimes.com/svc/topstories/v2/'+input+'.json';
+          url += '?' + $.param({
+          'api-key': 'e90ac7969c2046b0a19c7811bc84d6ee'
+      });
 
-    $.getJSON(url)
-      .done(function(data) {
-        $( '.loader' ).hide();
-
-        var dataList = data.results.filter(function(result){
-          return result.multimedia.length;
+      $.getJSON(url)
+        .done(function(data) {
+          $( '.loader' ).hide();
+          var dataList = data.results.filter(function(result){
+            return result.multimedia.length;
         }).splice(0,12);
-      
           var $viewImage = $('.contentList')
           var listItem = '';
           
-        $.each(dataList, function(data, value){
-      
+          $.each(dataList, function(data, value){
           var title = value.abstract;
           var image = value.multimedia[4].url;
 
@@ -39,12 +36,13 @@ $('.select_dropdown').selectric();
             listItem += '<a href="' + value.url + '"><img class="li-image" src="'
             listItem += image
             listItem += '"/></a></li>'
-        })
+          })
         $viewImage.append(listItem);
-      })
-      $('.li-article').on('click', 'li', function() {
-
-      window.open($(this).find('a').attr('href'));
+        })
+      
+      $('.li-article').on('click', 'li', function(event) {
+        event.preventDefault();
+        window.open($(this).find('a').attr('href'));
     });
   })
   

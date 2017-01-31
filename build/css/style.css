@@ -309,10 +309,9 @@ table {
 html {
   font-size: 16px;
   color: #ffffff; }
-
-body {
-  font-family: "open_sans", sans-serif, sans-serif, serif;
-  font-weight: normal; }
+  html body {
+    font-family: "open_sans", sans-serif, sans-serif, serif;
+    font-weight: normal; }
 
 h1 {
   font-family: "open_sans", sans-serif;
@@ -335,47 +334,47 @@ header {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
-      justify-content: center;
+  justify-content: center;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   text-align: center;
   height: 88vh;
   padding: 0.375rem; }
   @media screen and (min-width: 600px) {
     header {
       -ms-flex-pack: center;
-          justify-content: center;
+      justify-content: center;
       -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap;
+      flex-wrap: nowrap;
       padding: 0.375rem;
       -ms-flex-align: center;
-          align-items: center; } }
+      align-items: center; } }
   @media screen and (min-width: 1000px) {
     header {
       -ms-flex-pack: start;
-          justify-content: flex-start; } }
+      justify-content: flex-start; } }
 
 .header_up {
   -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -ms-flex-direction: column;
-      flex-direction: column;
+  flex-direction: column;
   height: auto;
   padding: 2rem 0 1.5rem 0; }
   @media screen and (min-width: 600px) {
     .header_up {
       -ms-flex-pack: center;
-          justify-content: center;
+      justify-content: center;
       -ms-flex-direction: row;
-          flex-direction: row;
+      flex-direction: row;
       height: 7.81rem;
       padding: 0.3rem; } }
   @media screen and (min-width: 600px) {
     .header_up {
       -ms-flex-pack: start;
-          justify-content: flex-start; } }
+      justify-content: flex-start; } }
 
 .logo_div {
   width: 100%; }
@@ -426,7 +425,7 @@ header {
       animation-delay: 1s;
       animation-direction: normal;
       -ms-flex-preferred-size: 53%;
-          flex-basis: 53%;
+      flex-basis: 53%;
       max-width: 16.25rem;
       height: 7.25rem;
       margin-top: 1rem;
@@ -465,7 +464,7 @@ body {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; } }
+    flex-wrap: wrap; } }
 
 .li-image {
   width: 100%;

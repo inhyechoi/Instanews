@@ -1,23 +1,23 @@
 @mixin media($width) {
-    @media screen and (min-width: $width) {
-        @content;
-    }
+  @media screen and (min-width: $width) {
+    @content;
+  }
 }
 
 @mixin mobile{
-    @media screen and (min-width: $mobile-width) {
-        @content;
-    }
+  @media screen and (min-width: $mobile-width) {
+    @content;
+  }
 }
 
 @mixin tablet{
-    @media screen and (min-width: $tablet-width) {
-        @content;
-    }
+  @media screen and (min-width: $tablet-width) {
+    @content;
+  }
 }
 
 @mixin desktop{
-    @media screen and (min-width: $desktop-width) {
-        @content;
-    }
+  @media screen and (min-width: $desktop-width) {
+    @content;
+  }
 }

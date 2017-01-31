@@ -1,35 +1,87 @@
-@keyframes logo_animate {
+@-webkit-keyframes logo_animate {
   0% {
-    transform: translate(0, 0); 
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); 
   }
   100% {
-     transform: translate(0.3rem, -0.2rem);  
+    -webkit-transform: translate(0.3rem, -0.2rem);
+            transform: translate(0.3rem, -0.2rem);  
+  }
+}
+
+@keyframes logo_animate {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); 
+  }
+  100% {
+    -webkit-transform: translate(0.3rem, -0.2rem);
+            transform: translate(0.3rem, -0.2rem);  
+  }
+}
+
+@-webkit-keyframes logo_animate2 {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(-0.62rem, 0.5rem);
+            transform: translate(-0.62rem, 0.5rem);  
   }
 }
 
 @keyframes logo_animate2 {
   0% {
-    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
   100% {
-    transform: translate(-0.62rem, 0.5rem);  
+    -webkit-transform: translate(-0.62rem, 0.5rem);
+            transform: translate(-0.62rem, 0.5rem);  
+  }
+}
+
+@-webkit-keyframes selection_box_animate {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);  
+  }
+  100% {
+    -webkit-transform: translate(0, 0.43rem);
+            transform: translate(0, 0.43rem);      
   }
 }
 
 @keyframes selection_box_animate {
   0% {
-    transform: translate(0, 0);  
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);  
   }
   100% {
-    transform: translate(0, 0.43rem);      
+    -webkit-transform: translate(0, 0.43rem);
+            transform: translate(0, 0.43rem);      
+  }
+}
+
+@-webkit-keyframes selection_box_animate2 {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);   
+  }
+  100% {
+    -webkit-transform: translate(0.62rem, 0px);
+            transform: translate(0.62rem, 0px);    
   }
 }
 
 @keyframes selection_box_animate2 {
   0% {
-    transform: translate(0, 0);   
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);   
   }
   100% {
-    transform: translate(0.62rem, 0px);    
+    -webkit-transform: translate(0.62rem, 0px);
+            transform: translate(0.62rem, 0px);    
   }
 }
