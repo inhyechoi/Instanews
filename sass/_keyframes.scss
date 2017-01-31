@@ -7,21 +7,21 @@
   }
 }
 
-@keyframes selection_box_animate {
-  0% {
-    transform: translate(0, 0);  
-  }
-  100% {
-    transform: translate(0, 0.43rem);      
-  }
-}
-
 @keyframes logo_animate2 {
   0% {
     transform: translate(0, 0);
   }
   100% {
     transform: translate(-0.62rem, 0.5rem);  
+  }
+}
+
+@keyframes selection_box_animate {
+  0% {
+    transform: translate(0, 0);  
+  }
+  100% {
+    transform: translate(0, 0.43rem);      
   }
 }
 
@@ -33,4 +33,3 @@
     transform: translate(0.62rem, 0px);    
   }
 }
-
