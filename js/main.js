@@ -24,20 +24,20 @@ $('.select_dropdown').selectric();
             return result.multimedia.length;
         }).splice(0,12);
           var $viewImage = $('.contentList')
-          var listItem = '';
+          var categorySearch = '';
           
           $.each(dataList, function(data, value){
           var title = value.abstract;
           var image = value.multimedia[4].url;
 
-            listItem += '<li class="li-article"><div id="wrapper"><p class="text">'
-            listItem += title
-            listItem += '</p></div>'
-            listItem += '<a href="' + value.url + '"><img class="li-image" src="'
-            listItem += image
-            listItem += '"/></a></li>'
+            categorySearch += '<li class="li-article"><div id="wrapper"><p class="text">'
+            categorySearch += title
+            categorySearch += '</p></div>'
+            categorySearch += '<a href="' + value.url + '"><img class="li-image" src="'
+            categorySearch += image
+            categorySearch += '"/></a></li>'
           })
-        $viewImage.append(listItem);
+        $viewImage.append(categorySearch);
         })
       
       $('.li-article').on('click', 'li', function(event) {
