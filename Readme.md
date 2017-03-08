@@ -1,5 +1,5 @@
 # Instanews App Project
-![main image] (screenshots/screenshot.jpg)
+![main image] (screenshots/screenshot.png)
 
 #Summary
 
