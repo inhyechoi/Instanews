@@ -1,16 +1,11 @@
 # Instanews App Project
-![main image] (screenshots/screenshot.jpg)
+![main image] (screenshots/screenshot.png)
+
+One-page responsive website that allows a user to filter top news story categories via the New York Times API
 
 #Summary
 
-Instanews: Showing the top 12 news stories from your selected category from the selection dropdown box.
-
-It can be a useful reference for the following:
-
-How to make Ajax calls(Json) to a web api
-CSS & Javascript animation
-Gulp variables&task setup in file called gulpfile.js
-organizing web-style and SASS partial files
+Showing the top 12 news stories from your selected category from the selection dropdown box.
 
 # Technologies
 
@@ -18,15 +13,19 @@ organizing web-style and SASS partial files
 * CSS3 using flexbox layout
 * SCSS - @mixins, variables, globals etc.
 * JS libraries, jQuery and Slectric plugin(selection box)
-
-# What have I learned
-
-Installing packages using npm (stands for node package manager)
-
-Calling contents(images/texts/urls) of data from web api
-
+* Gulp
 Setting the Gulp and running the task such as
 * lint
 * sass
 * browser-sync
+
+Installing packages using npm (stands for node package manager)
+
+Calling contents(images/texts/urls) of data from web api making Ajax calls(Json)
+
+
+# What have I learned
+
+This was the first project where I made Ajax calls to a web api and get the specific data I want from the api. By setting up Gulp, I could see the changes that I make without refreshing the page everytime, and also it would tell me where the error was comming from so by reading the comment I coudl figure out what went wrong in my code. Using SCSS for styles helped me to simplify my code keep it more organized partially. So whenever I had to change my style, I could just go to a specific partial instead of looking through my entire code.
+
 
