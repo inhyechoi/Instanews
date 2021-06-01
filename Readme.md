@@ -1,5 +1,5 @@
 # Instanews App Project
-![main image] (screenshots/screenshot.png)
+<img src="https://github.com/inhyechoi/Instanews/blob/master/screenshots/screenshot.png" width="auto" height="500" alt="Image of Instanews">
 
 One-page responsive website that allows a user to filter top news story categories via the New York Times API
 
